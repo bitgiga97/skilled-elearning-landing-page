@@ -8,13 +8,13 @@ html {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
-    padding: 16px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    padding: 16px 16px 0 16px;
     margin-bottom: 38px;
 }
 
@@ -51,7 +51,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-left: -16px;
 }
 
 .budget h1 {
@@ -239,7 +238,6 @@ footer>button {
         display: none;
     }
     body {
-        padding: 24px 39px 0 39px;
         background-image: url(./assets/image-hero-tablet.png);
         background-repeat: no-repeat;
         background-size: 640px 640px;
@@ -247,6 +245,7 @@ footer>button {
     }
     header {
         margin-bottom: 99px;
+        padding: 24px 40px 0 40px;
     }
     .budget {
         flex-basis: 60%;
@@ -270,10 +269,11 @@ footer>button {
         margin-top: -90px;
     }
     main {
-        padding: 0;
+        padding: 0 40px 0 40px;
     }
     footer {
-        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -282,10 +282,17 @@ footer>button {
 
 @media screen and (min-width: 1440px) {
     body {
-        padding: 24px 165px 0 165px;
+        padding: 0;
         background-image: url(./assets/image-hero-desktop.png);
         background-size: 990px 936px;
         background-position: right -330px top -170px;
+        overflow-x: hidden;
+    }
+    header {
+        padding: 24px 165px 0 165px;
+    }
+    main {
+        padding: 0 165px 0 165px;
     }
     .budget {
         flex-basis: 35%;
@@ -306,6 +313,10 @@ footer>button {
         row-gap: 56px;
         margin-top: 70px;
         margin-bottom: 140px;
+    }
+    footer {
+        padding-left: 165px;
+        padding-right: 165px;
     }
     /* hover styles */
     .btn-header:hover {
