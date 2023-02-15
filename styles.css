@@ -1,0 +1,329 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    padding: 16px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+header>h2 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: #13183F;
+    margin-top: 6px;
+}
+
+.btn-header {
+    width: 140px;
+    height: 48px;
+    background: #13183F;
+    border-radius: 28px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+main {
+    padding: 16px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.budget {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: -16px;
+}
+
+.budget h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+}
+
+.budget p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.btn-budget {
+    width: 167px;
+    height: 56px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+    margin-bottom: 66px;
+}
+
+.tablet-img {
+    display: none;
+}
+
+.card-header {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    display: flex;
+    text-align: start;
+    align-items: center;
+}
+
+.card-header>h2 {
+    margin-left: 28px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
+    height: 259px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/* icon imgs */
+
+img {
+    margin-top: -24px;
+    margin-left: 28px;
+}
+
+.card-text-container h3 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+}
+
+.card-container p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.card-container button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    border: none;
+    background-color: white;
+}
+
+.card-text-container {
+    box-sizing: border-box;
+    padding: 24px 29px 32px 28px;
+}
+
+.txt1-p {
+    margin-top: 16px;
+}
+
+.animation-btn {
+    margin-top: 10px;
+}
+
+.txt2-p {
+    margin-top: 16px;
+}
+
+.design-btn {
+    margin-top: 34px;
+}
+
+.txt3-p {
+    margin-top: 16px;
+}
+
+.photo-btn {
+    margin-top: 24px;
+}
+
+.txt4-p {
+    margin-top: 16px;
+}
+
+.crypto-btn {
+    margin-top: 12px;
+}
+
+.txt5-p {
+    margin-top: 16px;
+}
+
+.business-btn {
+    margin-top: 12px;
+}
+
+footer {
+    height: 120px;
+    background: #13183F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+footer>h2 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+footer>button {
+    width: 140px;
+    height: 48px;
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    border: none;
+    color: white;
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+/* Responsive styles for tablet version */
+
+@media screen and (min-width: 768px) {
+    .hero-container {
+        flex-direction: row;
+    }
+    .mobile-img {
+        display: none;
+    }
+    body {
+        padding: 24px 39px 0 39px;
+        background-image: url(./assets/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 640px 640px;
+        background-position: right -280px top -70px;
+    }
+    header {
+        margin-bottom: 99px;
+    }
+    .budget {
+        flex-basis: 60%;
+        margin-bottom: 186px;
+    }
+    .card-header {
+        width: 340px;
+        height: 260px;
+    }
+    .card {
+        width: 340px;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 10px;
+        row-gap: 32px;
+    }
+    .card-header>h2 {
+        margin-left: 32px;
+        margin-top: -90px;
+    }
+    main {
+        padding: 0;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+
+/* Responsive styles for desktop version */
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 24px 165px 0 165px;
+        background-image: url(./assets/image-hero-desktop.png);
+        background-size: 990px 936px;
+        background-position: right -330px top -170px;
+    }
+    .budget {
+        flex-basis: 35%;
+        margin-top: 50px;
+        margin-bottom: 226px;
+    }
+    .card-header {
+        width: 350px;
+        height: 322px;
+    }
+    .card {
+        width: 350px;
+        height: 322px;
+    }
+    .card-container {
+        grid-template-columns: repeat(3, auto);
+        column-gap: 30px;
+        row-gap: 56px;
+        margin-top: 70px;
+        margin-bottom: 140px;
+    }
+    /* hover styles */
+    .btn-header:hover {
+        cursor: pointer;
+        background-color: #666CA3;
+    }
+    .btn-budget:hover {
+        cursor: pointer;
+        background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        ;
+        opacity: 0.5;
+    }
+    .card-btn:hover {
+        cursor: pointer;
+        color: #FFA7C3;
+    }
+    .footer-btn:hover {
+        cursor: pointer;
+        background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+}
